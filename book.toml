@@ -24,7 +24,6 @@ renderer = ["html"]
 [output.html]
 additional-css = ["./utilities/custom.css"]
 additional-js = ["./utilities/mermaid.min.js", "./utilities/mermaid-init.js"]
-git-repository-url = "https://github.com/username/reponame"
 git-repository-icon = "fa-github-alt"
 no-section-label = true
 default-theme = "rust"
