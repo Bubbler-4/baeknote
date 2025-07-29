@@ -1,10 +1,10 @@
 [book]
-authors = ["erhant"]
-language = "en"
+authors = ["Bubbler"]
+language = "ko"
 multilingual = false
 src = "content"
-title = "Your Notes"
-description = "Your Description"
+title = "Baeknote"
+description = "Guide for your BOJ journey"
 
 # uses KaTeX instead of MathJax, much better interop
 [preprocessor.katex]
@@ -29,3 +29,9 @@ git-repository-icon = "fa-github-alt"
 no-section-label = true
 default-theme = "rust"
 preferred-dark-theme = "navy"
+cname = "baeknote.bubbler.blue"
+smart-punctuation = false
+
+[output.html.fold]
+enable = true
+level = 0
