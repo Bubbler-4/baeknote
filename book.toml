@@ -31,6 +31,8 @@ default-theme = "rust"
 preferred-dark-theme = "navy"
 cname = "baeknote.bubbler.blue"
 smart-punctuation = false
+git-repository-url = "https://github.com/Bubbler-4/baeknote"
+edit-url-template = "https://github.com/Bubbler-4/baeknote/edit/main/{path}"
 
 [output.html.fold]
 enable = true
