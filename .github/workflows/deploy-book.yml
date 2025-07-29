@@ -2,13 +2,13 @@
 name: your.url.here
 
 # https://github.com/orgs/vercel/discussions/3307
-env:
-  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+# env:
+#   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+#   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 
 on:
-  # push: # this will trigger on every push to main branch
-  workflow_dispatch: # you will manually dispatch the workflow
+  push: # this will trigger on every push to main branch
+  # workflow_dispatch: # you will manually dispatch the workflow
     branches:
       - main
 jobs:
@@ -47,15 +47,25 @@ jobs:
 
       - name: Generate static content for the book
         run: mdbook build
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: 'book'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
-      - name: Setup Node.js (required to install Vercel CLI)
-        uses: actions/setup-node@v3
+      # - name: Setup Node.js (required to install Vercel CLI)
+      #   uses: actions/setup-node@v3
 
-      - name: Install Vercel CLI
-        run: npm install --global vercel
+      # - name: Install Vercel CLI
+      #   run: npm install --global vercel
 
-      - name: Pull Vercel environment information
-        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+      # - name: Pull Vercel environment information
+      #   run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
 
-      - name: Deploy to Vercel
-        run: vercel book --prod --token=${{ secrets.VERCEL_TOKEN }}
+      # - name: Deploy to Vercel
+      #   run: vercel book --prod --token=${{ secrets.VERCEL_TOKEN }}
