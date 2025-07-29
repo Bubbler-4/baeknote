@@ -1,15 +1,17 @@
-<p align="center" style="margin-top: 30vh">
-  <i>Welcome to your-notes.</i>
-</p>
+<!-- toc -->
 
-<p align="center" style="margin-top: 10px; margin-bottom: 10px;">
-&therefore;
-</p>
+# Baeknote에 관하여
 
-<p align="center">
-  <i>lorem ipsum dolor sit amet</i>
-</p>
+Baeknote는 가능한 한 많은 BOJ의 문제에 대하여 문제 풀이에 도움이 될 만한 내용을 모으는 것을 목표로 합니다.
 
-<p align="right" style="margin-right: 10vw">
-  <i>&mdash; your-name</i>
-</p>
+* 문제 요약 및 번역
+    * 문제 이해에 어려움이 있을 경우 도움을 주는 것을 목적으로 합니다.
+    * 지문에 명시되지 않은 조건이 있을 경우, 가능하면 관련 내용을 보충하여 문제 풀이에서 부정적 경험을 줄이고자 합니다.
+    * 번역의 경우, 지문을 온전히 번역하는 것은 품이 많이 들기 때문에, 문제 풀이에 필요한 내용만을 남겨서 이해하기 쉽게 정리하는 것이 우선입니다.
+* 문제의 풀이
+    * 문제를 풀지 못했을 때 업솔빙에 도움을 주는 것을 목적으로 합니다.
+    * 공식 풀이가 있거나 좋은 블로그 글이 있다면 그것을 링크하는 것으로 대체할 수 있습니다.
+
+## Baeknote 사용 방법
+
+페이지 상단의 돋보기 버튼을 누르고 문제 번호를 검색합니다.
