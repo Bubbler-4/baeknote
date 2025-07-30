@@ -36,3 +36,8 @@ edit-url-template = "https://github.com/Bubbler-4/baeknote/edit/main/{path}"
 [output.html.fold]
 enable = true
 level = 0
+
+[output.html.search]
+enable = true
+heading-split-level = 1
+boost-paragraph = 0
