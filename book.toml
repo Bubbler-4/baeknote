@@ -41,3 +41,6 @@ level = 0
 enable = true
 heading-split-level = 1
 boost-paragraph = 0
+
+[output.html.print]
+enable = false
