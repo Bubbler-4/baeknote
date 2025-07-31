@@ -19,6 +19,9 @@ command = "mdbook-mermaid"
 command = "mdbook-toc"
 renderer = ["html"]
 
+[preprocessor.baeknote-summary]
+command = "python summary_gen.py"
+
 [output]
 
 [output.html]
