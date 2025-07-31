@@ -25,7 +25,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: 3.8 #install the python needed
+          python-version: 3.12 #install the python needed
           
       - name: Execute Summary-gen
         run: python summary_gen.py
