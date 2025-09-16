@@ -1,7 +1,7 @@
 ---
 title: Problems
 cascade:
-  type: docs
-  sidebar:
-    exclude: true
+    type: docs
+    sidebar:
+        exclude: true
 ---
