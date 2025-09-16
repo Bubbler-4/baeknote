@@ -1,6 +1,9 @@
 ---
 title: Documentation
 next: first-page
+cascade:
+    sidebar:
+        exclude: true
 ---
 
 This is a demo of the theme's documentation layout.

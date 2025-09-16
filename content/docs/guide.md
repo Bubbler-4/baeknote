@@ -1,6 +1,8 @@
 ---
 title: 사용할 수 있는 기능
 prev: contributing
+sidebar:
+    exclude: false
 ---
 
 ## Markdown
