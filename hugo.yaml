@@ -19,11 +19,11 @@ markup:
 
 menu:
   main:
-    - name: Docs
-      pageRef: /docs
-      weight: 1
     - name: About
-      pageRef: /about
+      pageRef: /docs/about
+      weight: 1
+    - name: Contribute
+      pageRef: /docs/contributing
       weight: 2
     - name: Search
       weight: 4

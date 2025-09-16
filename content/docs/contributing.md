@@ -1,6 +1,8 @@
 ---
 title: Baeknote에 기여하기
 toc: false
+prev: about
+next: guide
 ---
 
 기여하고자 하는 문서가 이미 있다면 해당 페이지 오른쪽 상단의 수정 버튼을 눌러 기여할 수 있습니다.
