@@ -1,6 +1,7 @@
 # Hugo configuration file
 title: Baeknote
 enableGitInfo: true
+enableInlineShortcodes: true
 
 # import hextra as module
 module:
