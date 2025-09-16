@@ -34,6 +34,16 @@ menu:
       url: "https://github.com/Bubbler-4/baeknote-hextra/"
       params:
         icon: github
+  sidebar:
+    - name: "Baeknote에 관하여"
+      pageRef: /docs/about
+      weight: 1
+    - name: "Baeknote에 기여하기"
+      pageRef: /docs/contributing
+      weight: 2
+    - name: "사용할 수 있는 기능"
+      pageRef: /docs/guide
+      weight: 3
 
 params:
   displayUpdatedDate: true
