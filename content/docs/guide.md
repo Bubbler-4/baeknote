@@ -42,3 +42,5 @@ KaTeX 렌더러를 통해 수식을 작성할 수 있습니다. 인라인 수식
 [Hextra의 shortcodes](https://imfing.github.io/hextra/docs/guide/shortcodes/)를 사용할 수 있습니다.
 
 {{< icon "boj" >}} {{< icon "baeknote" >}}
+
+{{< boj 1000 >}}
