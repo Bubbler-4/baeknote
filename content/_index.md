@@ -10,5 +10,5 @@ toc: false
 {{< cards >}}
   {{< card link="docs/about" title="Baeknote에 관하여" icon="information-circle" >}}
   {{< card link="docs/contributing" title="Baeknote에 기여하기" icon="pencil-alt" >}}
-  {{< card link="docs/contributing" title="사용할 수 있는 기능" icon="hashtag" >}}
+  {{< card link="docs/guide" title="사용할 수 있는 기능" icon="hashtag" >}}
 {{< /cards >}}
