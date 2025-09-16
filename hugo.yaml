@@ -43,11 +43,11 @@ params:
     displayTitle: true
     displayLogo: true
     logo:
-      path: static/favicon.svg
-      dark: static/favicon-dark.svg
+      path: favicon.svg
+      dark: favicon-dark.svg
       link: /
-      width: 40
-      height: 40
+      width: 30
+      height: 30
 
   footer:
     displayCopyright: false
