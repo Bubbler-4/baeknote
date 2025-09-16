@@ -1,5 +1,6 @@
 # Hugo configuration file
-title: My Site
+title: Baeknote
+enableGitInfo: true
 
 # import hextra as module
 module:
@@ -24,25 +25,20 @@ menu:
     - name: About
       pageRef: /about
       weight: 2
-    - name: Contact ↗
-      url: "https://github.com/imfing"
-      weight: 3
     - name: Search
       weight: 4
       params:
         type: search
     - name: GitHub
       weight: 5
-      url: "https://github.com/imfing/hextra-starter-template"
+      url: "https://github.com/Bubbler-4/baeknote-hextra/"
       params:
         icon: github
-    - name: Twitter
-      weight: 6
-      url: "https://twitter.com/"
-      params:
-        icon: x-twitter
 
 params:
+  displayUpdatedDate: true
+  dateFormat: "2006년 1월 2일"
+  
   navbar:
     displayTitle: true
     displayLogo: false
@@ -53,4 +49,13 @@ params:
 
   editURL:
     enable: true
-    base: "https://github.com/imfing/hextra-starter-template/edit/main/content"
+    base: "https://github.com/Bubbler-4/baeknote-hextra/edit/main/content"
+
+  search:
+    enable: true
+    type: flexsearch
+    flexsearch:
+      index: title
+
+  # opengraph setting
+  description: "Baeknote - Guide for your BOJ journey"
