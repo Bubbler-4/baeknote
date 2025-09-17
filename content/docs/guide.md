@@ -46,3 +46,5 @@ KaTeX 렌더러를 통해 수식을 작성할 수 있습니다.
 {{< boj 1000 >}}
 
 {{< baeknote 1000 >}}
+
+\#1000 [{{< icon "boj">}}](https://www.acmicpc.net/problem/1000)
