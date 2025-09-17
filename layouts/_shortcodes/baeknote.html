@@ -1,4 +1,5 @@
 {{- $input := .Get 0 -}}
 {{- $chars := split $input "" -}}
 
-#{{ .Get 0 }}<a href="https://www.acmicpc.net/problem/{{ .Get 0 }}" title="BOJ {{ .Get 0 }}">{{ partial "boj_icon.html" }}</a><a href="/problems/{{- range $chars -}}/{{ . }}{{- end -}}" title="Baeknote {{ .Get 0 }}">{{ partial "baeknote_icon.html" }}</a>
+#{{ .Get 0 }}<a href="https://www.acmicpc.net/problem/{{ .Get 0 }}" title="BOJ {{ .Get 0 }}">{{ partial "boj_icon.html" }}</a><a href="/problems{{- range $chars -}}/{{ . }}{{- end -}}" title="Baeknote {{ .Get 0 }}">{{ partial "baeknote_icon.html" }}</a>
+
