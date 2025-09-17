@@ -8,7 +8,7 @@
         <div class="content">
           {{ if .Params.boj }}<h1>BOJ {{ .Params.boj }} {{ .Params.bojTitle }}</h1>{{ end }}
           {{ if .Title }}<h1>{{ .Title }}</h1>{{ end }}
-          {{ if .Params.boj }}<p>문제 링크: {{ partial "boj_link.html" (.Params.boj) }}</p>
+          {{ if .Params.boj }}<p>문제 링크: {{ partial "boj_link.html" (.Params.boj) }}</p>{{ end }}
           {{ .Content }}
         </div>
         {{ partial "components/last-updated.html" . }}
