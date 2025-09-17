@@ -44,3 +44,5 @@ KaTeX 렌더러를 통해 수식을 작성할 수 있습니다. 인라인 수식
 {{< icon "boj" >}} {{< icon "baeknote" >}}
 
 {{< boj 1000 >}}
+
+{{< baeknote 1000 >}}
