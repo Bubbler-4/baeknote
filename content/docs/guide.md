@@ -17,11 +17,11 @@ prev: docs/contributing
 
 KaTeX 렌더러를 통해 수식을 작성할 수 있습니다. 인라인 수식은 `\(`와 `\)` 사이에 작성합니다.
 
-\( \frac{n(n+1)}{2} \)
+\(\frac{n(n+1)}{2}\)
 
-$ \frac{n(n+1)}{2} $
+$\frac{n(n+1)}{2}$
 
-$$ \frac{n(n+1)}{2} $$
+$$\frac{n(n+1)}{2}$$
 
 ## Mermaid
 
