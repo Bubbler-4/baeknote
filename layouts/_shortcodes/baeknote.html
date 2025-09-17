@@ -1,3 +1,4 @@
 {{- $input := .Get 0 -}}
 {{- $chars := split $input "" -}}
-#{{ .Get 0 }}<a href="https://www.acmicpc.net/problem/{{ .Get 0 }}" title="BOJ {{ .Get 0 }}"><span class="hx:inline-block hx:align-text-bottom hextra-icon"><img src="/boj.svg" height="1em"></span></a><a href="/problems/{{- range $chars -}}/{{ . }}{{- end -}}" title="Baeknote {{ .Get 0 }}"><span class="hx:inline-block hx:align-text-bottom hextra-icon"><img src="/baeknote.svg" height="1em"></span></a>
+
+#{{ .Get 0 }}<a href="https://www.acmicpc.net/problem/{{ .Get 0 }}" title="BOJ {{ .Get 0 }}">{{ partial "boj_icon.html" }}</a><a href="/problems/{{- range $chars -}}/{{ . }}{{- end -}}" title="Baeknote {{ .Get 0 }}">{{ partial "baeknote_icon.html" }}</a>
