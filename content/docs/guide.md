@@ -17,6 +17,12 @@ prev: docs/contributing
 
 KaTeX 렌더러를 통해 수식을 작성할 수 있습니다. 인라인 수식은 `\(`와 `\)` 사이에 작성합니다.
 
+\( \frac{n(n+1)}{2} \)
+
+$ \frac{n(n+1)}{2} $
+
+$$ \frac{n(n+1)}{2} $$
+
 ## Mermaid
 
 [Mermaid](https://github.com/mermaid-js/mermaid#readme) 다이어그램을 그릴 수 있습니다. 코드 블록의 언어를 `mermaid`로 설정하면 자동으로 다이어그램으로 변환됩니다.
