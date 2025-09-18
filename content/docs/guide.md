@@ -41,10 +41,4 @@ KaTeX 렌더러를 통해 수식을 작성할 수 있습니다.
 [Hugo 기본 shortcodes](https://gohugo.io/content-management/shortcodes/)와
 [Hextra의 shortcodes](https://imfing.github.io/hextra/docs/guide/shortcodes/)를 사용할 수 있습니다.
 
-{{< icon "boj" >}} {{< icon "baeknote" >}}
-
-{{< boj 1000 >}}
-
-{{< baeknote 1000 >}}
-
-\#1000 [{{< icon "boj">}}](https://www.acmicpc.net/problem/1000)
+`{{</* baeknote 31554 */>}}`를 입력하면 {{< baeknote 31554 >}}와 같이 표시됩니다.
