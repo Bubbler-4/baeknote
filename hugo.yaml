@@ -78,7 +78,7 @@ params:
     enable: true
     type: flexsearch
     flexsearch:
-      index: heading
+      index: title
 
   # opengraph setting
   description: "Baeknote - Guide for your BOJ journey"
