@@ -11,7 +11,7 @@
 {{ else if .Title }}
   {{ $title = .Title }}
 {{ else if .Params.boj }}
-  {{ $frags = slice "BOJ" .Params.boj .Params.bojTitle }}
+  {{ $frags := slice "BOJ" .Params.boj .Params.bojTitle }}
   {{ $title = delimit $frags " " }}
 {{ else if and .IsSection .File }}
   {{ $title = path.Base .File.Dir | humanize | title }}
