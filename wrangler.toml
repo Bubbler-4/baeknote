@@ -1,8 +1,12 @@
 # Configure Cloudflare Worker
 
-name = "baeknote-hextra"
+name = "baeknote"
 compatibility_date = "2025-07-31"
 main = "src/index.js"
+
+[[routes]]
+pattern = "boj.guide"
+custom_domain = true
 
 [observability]
 enabled = true
