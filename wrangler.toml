@@ -2,6 +2,7 @@
 
 name = "baeknote-hextra"
 compatibility_date = "2025-07-31"
+main = "src/index.js"
 
 [build]
 command = "chmod a+x build.sh && ./build.sh"
