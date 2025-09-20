@@ -13,7 +13,7 @@ export default {
     if (pattern_match) {
       let probid = pattern_match[1];
       let new_url = url.origin + '/problems/' + [...probid].join('/') + '/';
-      return Response.redirect(new_url, 302);
+      return Response.redirect(new_url, 301); // permanent redirect
     }
     return fetch(request);
   },
