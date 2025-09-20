@@ -8,6 +8,7 @@ export default {
   fetch(request, env, ctx) {
     // Redirect /<problem-id> to /problems/.../
     let url = new URL(request.url);
+    console.log(url.pathname);
     let pattern_match = url.pathname.match(/^\/([1-9][0-9]*)$/);
     if (pattern_match) {
       let probid = pattern_match[1];
