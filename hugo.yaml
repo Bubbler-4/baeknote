@@ -38,7 +38,7 @@ menu:
         type: search
     - name: GitHub
       weight: 5
-      url: "https://github.com/Bubbler-4/baeknote-hextra/"
+      url: "https://github.com/Bubbler-4/baeknote/"
       params:
         icon: github
   sidebar:
@@ -72,7 +72,7 @@ params:
 
   editURL:
     enable: true
-    base: "https://github.com/Bubbler-4/baeknote-hextra/edit/main/content"
+    base: "https://github.com/Bubbler-4/baeknote/edit/main/content"
 
   search:
     enable: true
