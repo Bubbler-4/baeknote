@@ -12,9 +12,12 @@
           {{- $pagerSize := 30 -}}
           {{- $paginator := .Paginate $pages $pagerSize -}}
           {{- range $paginator.Pages }}
-            <div class="hx:mb-10">
-              <h3><a style="color: inherit; text-decoration: none;" class="hx:block hx:font-semibold hx:mt-8 hx:text-2xl " href="{{ .RelPermalink }}">{{ partial "utils/title" . }}</a></h3>
-            </div>
+            {{- partial "shortcodes/card" (dict
+              "page"        .
+              "link"        .RelPermalink
+              "title"       (partial "utils/title" .)
+              )
+            -}}
           {{ end -}}
           
           {{- if gt $paginator.TotalPages 1 -}}
