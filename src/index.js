@@ -7,14 +7,20 @@ async function handleRequest(request) {
   const url = new URL(request.url);
   console.log(url.pathname);
   const pattern_match = url.pathname.match(/^\/([1-9][0-9]{3,})$/);
+  let response;
   if (pattern_match) {
     const probid = pattern_match[1];
-    const new_url = url.origin + '/problems/' + [...probid].join('/') + '/';
-    return Response.redirect(new_url, 301); // permanent redirect
+    url.pathname = '/problems/' + [...probid].join('/') + '/';
+    response = await Response.redirect(url, 301); // permanent redirect
+  } else {
+    response = await fetch(request);
   }
-  // Now this page does not exist
-  url.pathname = "/not_found/";
-  const response = await fetch(url);
+  if (url.status === 404) {
+    // Now this page does not exist
+    url.pathname = "/not_found/";
+    const response = await fetch(url);
+    return response;
+  }
   return response;
 }
 
@@ -29,5 +35,6 @@ export default {
     return handleRequest(request);
   },
 };
+
 
 
