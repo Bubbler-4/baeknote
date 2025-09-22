@@ -5,8 +5,12 @@ compatibility_date = "2025-07-31"
 main = "src/index.js"
 
 [[routes]]
-pattern = "boj.guide"
-custom_domain = true
+pattern = "boj.guide/*"
+zone_name = "boj.guide"
+
+[[routes]]
+pattern = "boj.guide/problems/*"
+zone_name = "boj.guide"
 
 [observability]
 enabled = true
