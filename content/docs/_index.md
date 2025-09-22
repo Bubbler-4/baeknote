@@ -4,4 +4,5 @@ next: first-page
 cascade:
     sidebar:
         exclude: true
+    excludeSearch: true
 ---
