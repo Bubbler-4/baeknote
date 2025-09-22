@@ -5,12 +5,8 @@ compatibility_date = "2025-07-31"
 main = "src/index.js"
 
 [[routes]]
-pattern = "boj.guide/*"
-zone_name = "boj.guide"
-
-[[routes]]
-pattern = "boj.guide/problems/*"
-zone_name = "boj.guide"
+pattern = "boj.guide"
+custom_domain = true
 
 [observability]
 enabled = true
@@ -20,5 +16,5 @@ command = "chmod a+x build.sh && ./build.sh"
 
 [assets]
 directory = "./public"
-not_found_handling = "none"
+not_found_handling = "404-page"
 run_worker_first = [ "/*", "!/", "!/docs/*", "!/problems/*", "!/not_found*", "!/css/*", "!/js/*", "!/*.*" ]
