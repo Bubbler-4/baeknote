@@ -11,14 +11,16 @@
           {{- $pages := partial "utils/sort-pages" (dict "page" . "by" site.Params.blog.list.sortBy "order" site.Params.blog.list.sortOrder) -}}
           {{- $pagerSize := 30 -}}
           {{- $paginator := .Paginate $pages $pagerSize -}}
-          {{- range $paginator.Pages }}
-            {{- partial "shortcodes/card" (dict
-              "page"        .
-              "link"        .RelPermalink
-              "title"       (partial "utils/title" .)
-              )
-            -}}
-          {{ end -}}
+          <div class="hextra-cards hx:mt-4 hx:gap-4 hx:grid not-prose" style="--hextra-cards-grid-cols: 2;">
+            {{- range $paginator.Pages }}
+              {{- partial "shortcodes/card" (dict
+                "page"        .
+                "link"        .RelPermalink
+                "title"       (partial "utils/title" .)
+                )
+              -}}
+            {{ end -}}
+          </div>
           
           {{- if gt $paginator.TotalPages 1 -}}
             {{ partial "components/blog-pager.html" $paginator }}
