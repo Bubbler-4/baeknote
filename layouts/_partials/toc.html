@@ -34,7 +34,7 @@
             </div>
           </div>
         {{- end -}}
-        {{- if site.Params.editURL.enable -}}
+        {{- if and site.Params.editURL.enable (ne .Section "blog") -}}
           {{- $editURL := site.Params.editURL.base | default "" -}}
           {{- with .Params.editURL -}}
             {{/* if `editURL` is set in the front matter */}}
