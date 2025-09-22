@@ -6,15 +6,17 @@
       <main class="hx:w-full hx:min-w-0 hx:max-w-6xl hx:px-6 hx:pt-4 hx:md:px-12">
         {{ partial "breadcrumb.html" (dict "page" . "enable" true) }}
         <div class="content">
-          {{ if .Params.boj }}<h1>BOJ {{ .Params.boj }} {{ .Params.bojTitle }}</h1>{{ end }}
-          {{ if .Title }}<h1>{{ .Title }}</h1>{{ end }}
-          {{ if .Params.boj }}<p>문제 링크: {{ partial "boj_link.html" (.Params.boj) }}</p>{{ end }}
-          {{ .Content }}
+          <h1>{{ Page Not Found }}</h1>
+          <p>문제에 대한 정보를 보러 오셨다면, 문제를 푸신 뒤에 기여하는 것을 고려해 주세요. 오른쪽 상단의 수정 링크에서 내용을 추가할 수 있습니다.
+          구체적인 방법은 <a href="/docs/contributing">Baeknote에 기여하기</a>를 참고해 주세요.</p>
         </div>
-        {{ partial "components/last-updated.html" . }}
-        {{ partial "components/pager.html" . }}
-        {{ partial "components/comments.html" . }}
       </main>
     </article>
   </div>
+  <script>
+    const path = window.location.pathname;
+    const editLinkElem = document.getElementById("edit-this-page");
+    const editPath = editLinkElem.href + (path.endsWith("/") ? path.slice(0, -1) : path) + ".md";
+    editLinkElem.href = editPath;
+  </script>
 {{ end }}
