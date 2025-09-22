@@ -9,7 +9,7 @@ export default {
     // Redirect /<problem-id> to /problems/.../
     let url = new URL(request.url);
     console.log(url.pathname);
-    let pattern_match = url.pathname.match(/^\/([1-9][0-9]*)$/);
+    let pattern_match = url.pathname.match(/^\/([1-9][0-9]{3,})$/);
     if (pattern_match) {
       let probid = pattern_match[1];
       let new_url = url.origin + '/problems/' + [...probid].join('/') + '/';
@@ -17,4 +17,5 @@ export default {
     }
     return fetch(request);
   },
+
 };
