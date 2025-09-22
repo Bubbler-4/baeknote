@@ -15,6 +15,7 @@ async function handleRequest(request) {
   const response = await fetch(request);
   if (response.status === 404) {
     url.pathname = "/";
+    console.log(url);
     return await fetch(url);
   }
   return response;
@@ -31,3 +32,4 @@ export default {
     return handleRequest(request);
   },
 };
+
