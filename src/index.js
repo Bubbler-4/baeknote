@@ -7,7 +7,6 @@ async function handleRequest(request) {
   const url = new URL(request.url);
   console.log(url.pathname);
   const pattern_match = url.pathname.match(/^\/([1-9][0-9]{3,})$/);
-  let response;
   if (pattern_match) {
     const probid = pattern_match[1];
     url.pathname = '/problems/' + [...probid].join('/') + '/';
@@ -36,6 +35,7 @@ export default {
     return handleRequest(request);
   },
 };
+
 
 
 
