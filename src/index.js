@@ -12,12 +12,9 @@ async function handleRequest(request) {
     const new_url = url.origin + '/problems/' + [...probid].join('/') + '/';
     return Response.redirect(new_url, 301); // permanent redirect
   }
-  const response = await fetch(request);
-  if (response.status === 404) {
-    url.pathname = "/";
-    console.log(url);
-    return await fetch(url);
-  }
+  // Now this page does not exist
+  url.pathname = "/not_found/";
+  const response = await fetch(url);
   return response;
 }
 
@@ -32,4 +29,5 @@ export default {
     return handleRequest(request);
   },
 };
+
 
