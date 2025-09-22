@@ -32,6 +32,9 @@ menu:
     - name: Contribute
       pageRef: /docs/contributing
       weight: 2
+    - name: Updates
+      pageRef: /blog
+      weight: 3
     - name: Search
       weight: 4
       params:
