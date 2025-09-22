@@ -10,11 +10,9 @@ async function handleRequest(request) {
   if (pattern_match) {
     const probid = pattern_match[1];
     url.pathname = '/problems/' + [...probid].join('/') + '/';
-    // response = await Response.redirect(url, 301); // permanent redirect
-  } else {
-    // response = await fetch(request);
+    return Response.redirect(url, 301); // permanent redirect
   }
-  const response = await fetch(url);
+  const response = await fetch(request);
   if (url.status === 404) {
     // Now this page does not exist
     url.pathname = "/not_found/";
@@ -35,6 +33,7 @@ export default {
     return handleRequest(request);
   },
 };
+
 
 
 
