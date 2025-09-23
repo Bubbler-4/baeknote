@@ -2,6 +2,7 @@
 title: Baeknote
 enableGitInfo: true
 enableInlineShortcodes: true
+baseURL: https://boj.guide/
 
 # import hextra as module
 module:
