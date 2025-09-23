@@ -15,7 +15,7 @@
               {{- partial "shortcodes/card" (dict
                 "page"        .
                 "link"        .RelPermalink
-                "title"       (partial "utils/title" .)
+                "title"       (partial "utils/title" . | safeHTML | truncate 100)
                 )
               -}}
             {{ end -}}
