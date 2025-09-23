@@ -32,15 +32,18 @@ menu:
     - name: Contribute
       pageRef: /docs/contributing
       weight: 2
+    - name: Problems
+      pageRef: /problems
+      weight: 3
     - name: Updates
       pageRef: /blog
-      weight: 3
-    - name: Search
       weight: 4
+    - name: Search
+      weight: 5
       params:
         type: search
     - name: GitHub
-      weight: 5
+      weight: 6
       url: "https://github.com/Bubbler-4/baeknote/"
       params:
         icon: github
