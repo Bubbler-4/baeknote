@@ -28,16 +28,16 @@ markup:
 menu:
   main:
     - name: About
-      pageRef: /docs/about
+      pageRef: /docs/about/
       weight: 1
     - name: Contribute
-      pageRef: /docs/contributing
+      pageRef: /docs/contributing/
       weight: 2
     - name: Problems
-      pageRef: /problems
+      pageRef: /problems/
       weight: 3
     - name: Updates
-      pageRef: /blog
+      pageRef: /blog/
       weight: 4
     - name: Search
       weight: 5
@@ -50,13 +50,13 @@ menu:
         icon: github
   sidebar:
     - name: "Baeknote에 관하여"
-      pageRef: /docs/about
+      pageRef: /docs/about/
       weight: 1
     - name: "Baeknote에 기여하기"
-      pageRef: /docs/contributing
+      pageRef: /docs/contributing/
       weight: 2
     - name: "사용할 수 있는 기능"
-      pageRef: /docs/guide
+      pageRef: /docs/guide/
       weight: 3
 
 params:
