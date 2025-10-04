@@ -61,7 +61,7 @@ menu:
 
 params:
   displayUpdatedDate: true
-  dateFormat: "2006년 1월 2일"
+  dateFormat: "2006년 1월 2일 15:04:05"
   
   navbar:
     displayTitle: true
