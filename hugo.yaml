@@ -86,6 +86,11 @@ params:
     type: flexsearch
     flexsearch:
       index: title
+  
+  blog:
+    list:
+      sortBy: lastmod
+      sortOrder: desc
 
   # opengraph setting
   description: "Baeknote - Guide for your BOJ journey"
