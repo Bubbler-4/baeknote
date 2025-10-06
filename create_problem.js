@@ -1,9 +1,9 @@
-const fs = require('fs');
-const path = require('path');
-const { execFile } = require('child_process');
+const fs = require("fs");
+const path = require("path");
+const { execFileSync } = require("child_process");
 
-const probNum = process.argv[2];
-const template = `---
+for (const probNum of process.argv.slice(2)) {
+  const template = `---
 params:
   boj: ${probNum}
   bojTitle: 문제 제목
@@ -26,16 +26,17 @@ params:
 {{% /details %}}
 `;
 
-const probNumSplit = probNum.split('');
-const fileName = probNumSplit.pop() + '.md';
-const filePath = path.join('content', 'problems', ...probNumSplit, fileName);
+  const probNumSplit = probNum.split("");
+  const fileName = probNumSplit.pop() + ".md";
+  const filePath = path.join("content", "problems", ...probNumSplit, fileName);
 
-if (!fs.existsSync(filePath)) {
+  if (!fs.existsSync(filePath)) {
     const dirName = path.dirname(filePath);
     if (!fs.existsSync(dirName)) {
-        fs.mkdirSync(dirName, { recursive: true });
+      fs.mkdirSync(dirName, { recursive: true });
     }
     fs.writeFileSync(filePath, template);
-}
+  }
 
-execFile('code', ['-r', filePath]);
+  execFileSync("code", ["-r", filePath]);
+}
