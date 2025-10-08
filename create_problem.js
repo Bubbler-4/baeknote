@@ -19,11 +19,11 @@ params:
 
 ## 문제 풀이
 
-{{% details title="스포일러" closed="true" %}}
+{{< details title="스포일러" closed="true" >}}
 
 여기에 문제 풀이 입력
 
-{{% /details %}}
+{{< /details >}}
 `;
 
   const probNumSplit = probNum.split("");

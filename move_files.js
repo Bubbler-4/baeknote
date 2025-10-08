@@ -19,9 +19,9 @@ for (const mdFile of mdFiles) {
     console.log(`Found problem: ${problemId} - ${problemTitle}`);
     const body = content.split("<!-- toc -->")[1];
     const fixedBody = body
-      .replace(/<details>\s*<summary>/g, '{{% details title="')
-      .replace(/<\/summary>/g, '" closed="true" %}}')
-      .replace(/<\/details>/g, "{{% /details %}}");
+      .replace(/<details>\s*<summary>/g, '{{< details title="')
+      .replace(/<\/summary>/g, '" closed="true" >}}')
+      .replace(/<\/details>/g, "{{< /details >}}");
     content = `---
 draft: true
 params:
