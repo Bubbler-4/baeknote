@@ -1,8 +1,7 @@
 {{- $input := .Get 0 -}}
 {{- $chars := split $input "" -}}
-
-#{{ .Get 0 }} <a href="https://www.acmicpc.net/problem/{{ .Get 0 }}" title="BOJ {{ .Get 0 }}" target="_blank" rel="noopener">{{ partial "boj_icon.html" -}}</a> <a href="/problems{{- range $chars -}}/{{ . }}{{- end -}}/" title="Baeknote {{ .Get 0 }}">{{ partial "baeknote_icon.html" }}</a>
-
-{{- $dummy := "" -}}
-
-
+{{- $path := delimit (slice "/problems/" (delimit $chars "/") "/") "" -}}
+{{- with .Site.GetPage $path -}}
+  {{- $title := .Params.bojTitle -}}
+  <u>#{{ $input }} {{ $title }}</u> <a href="https://www.acmicpc.net/problem/{{ $input }}" title="BOJ {{ $input }}" target="_blank" rel="noopener">{{ partial "boj_icon.html" -}}</a> <a href="{{ $path }}" title="Baeknote {{ $input }}">{{ partial "baeknote_icon.html" }}</a>
+{{- end -}}
